@@ -9,7 +9,7 @@
   <div class="container">
     <h1>TodoList</h1>
 
-    <form>
+    <form onSubmit = "submitTodo(); return false">
       <input type="text" id="new-todo" placeholder="What needs to be done?">
     </form>
 
@@ -27,6 +27,9 @@
       Todo: <span id="todo-count">1</span> •
       Done: <span id="completed-count">0</span> •
       Total: <span id="total-count">1</span>
+      <!-- Clean up To Do's which are done -->
+      <a href = "#" onClick = "cleanUpDoneTodos(); return false"> Clean To Do's </a>
+
     </div>
   </div>
 
