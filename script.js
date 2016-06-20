@@ -17,4 +17,21 @@ function updateCounters() {
 
 }
 
+
+function toggleDone() {
+  var checkbox = this;
+
+  if (checkbox.checked) {
+    checkbox.parentElement.className = "todo completed"
+  } else {
+    checkbox.parentElement.className = "todo"
+  }
+
+  updateCounters();
+}
+
+
+
+
+
 updateCounters();
